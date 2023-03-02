@@ -1,0 +1,242 @@
+{
+	"info": {
+		"_postman_id": "7ca7a7cf-7b3a-4bd7-b97f-8a052f77ad8a",
+		"name": "Colegio Novatec",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19011004"
+	},
+	"item": [
+		{
+			"name": "obtener todos Profesores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/Profesores",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Profesores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener todos Estudiantes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/Estudiantes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Estudiantes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener by id Profesor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/Profesores/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Profesores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener by id Estudiante",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/Estudiantes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Estudiantes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear nuevo Profesor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"nombre\": \"Maria\",\r\n\"edad\": 35,\r\n\"correo\": \"maria@example.com\",\r\n\"especialidad\": \"Matemáticas\",\r\n\"fechaContrato\": \"2022-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/Profesores",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Profesores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear nuevo Estudiante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Alejandra García\",\r\n    \"edad\": 20,\r\n    \"correo\": \"alejandra.garcia@email.com\",\r\n    \"carrera\": \"Medicina\",\r\n    \"promedio\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/Estudiantes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Estudiantes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar Profesor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 1,\r\n        \"nombre\": \"Juan Pérez\",\r\n        \"edad\": 40,\r\n        \"correo\": \"juan.perez@email.com\",\r\n        \"especialidad\": \"Matemáticas\",\r\n        \"fechaContrato\": \"2020-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/Profesores/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Profesores",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar Estudiante",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Laura\",\r\n    \"apellido\": \"Rondon\",\r\n    \"email\": \"Laurar@bolsadeideas.com\",\r\n    \"createAt\": \"2013-02-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/clientes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar Profesor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/Profesores/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Profesores",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar Estudiante",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/Estudiantes/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Estudiantes",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
